@@ -2,25 +2,64 @@
 <html>
   <head>
        <title>Portfolio</title>
-       <link href="assets/css/style.css" rel="stylesheet">
+       <link href="./assets/css/style.css" rel="stylesheet">
   </head>
    <header> 
-      <div id="name">
-           <h1>Elena Demidionok</h1>
-      </div>   
+        <div class="headercontainer">
+            <div id="name">
+                <h1>Elena Demidionok</h1>
+           </div>   
             <ul>
                 <li><a  href="contact.html" class="active" >Contact</a></li>
                 <li><a href="portfolio.html" >Portfolio</a></li>
                 <li style="float:right" ><a href="index.html">About</a></li>
              </ul>
-  </header>
+        </div>
+   </header>
   <body>
-        <div class="block">
+        <!--Page wrapper-->
+         <div class="page-wrapper">
+              <div class="block">
+
+                   <h2 class="about">Contact</h2>
+                   <hr>
+
+                    <!-- container-contact-form--> 
+                   <div class="container-contact-form">
+
+                          <form action="mailto:vhelen0404@gmail.com" method="post" enctype="text/plain">
+                           Name:<br>
+                          <input type="text" name="name" placeholder="Your name.."><br>
+                          E-mail:<br>
+                          <input type="text" name="mail" placeholder="youremail@adress.com"><br>
+                          Message:<br>
+                          <textarea type="text" name="comment" placeholder="Write something nice..)" style="height:200px"></textarea>
+                              <br><br>
+                          <input type="submit" value="Send">
+                           </form>
+                   </div>  
+                   <!--// container-contact-form-->    
+              </div>
+              <!--//block-->
+
+                        
+                    
+
            
-           <h2 class="about">Contact</h2>
-                       
-           <hr>
-       <div>
+         </div>
+           <!--// page wrapper-->
+            
+
+        
+ 
+         <!-- footer-->
+         <div class="footer">
+              <div class="footer-bottom">
+                   &copy; Copyright |Elena Demidionok
+              </div>
+
+         </div>
+         <!--// footer-->
   </body>
 
 </html>

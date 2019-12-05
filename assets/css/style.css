@@ -6,38 +6,53 @@ html, body {
     margin: 0;
   }
 
+  .page-wrapper {
+    min-height: 100%;
+  }
 
 body {
    
-    background-image: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Flock-Backgrounds-PIC-WPB004577.jpg);
+    background-image: url('../images/grey_wash.png');
     height:100%;
 }
 
 header {
     background-color: cornsilk;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
     position: relative;
+    width: 100%;
+    left: 0;
 }   
+
+.headercontainer {
+         background-color: cornsilk;
+         width: 960px;
+         height: 80px;
+         
+         margin: 0 auto;
+
+
+}
 #name {
-    position: relative;
-    background-color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
-    text-align: center;
-    color: cornsilk;
-    height: 80px;
-    width: 200px;
-    margin-left: 100px;
-    padding: 5px;
-   
+  position: relative;
+  float: left;
+  background-color: #4d7992;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+  text-align: center;
+  color: cornsilk;
+  height: 80px;
+  width: 45px
+  margin: 0 auto;
+  padding: 5px;
+  top: 0;
+ 
+ 
 }
 
 ul {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
+    position: relative;
+    float: right;
+    margin: 0 auto;
     list-style-type: none;
     margin: 0;
     padding: 9px;
@@ -52,6 +67,7 @@ ul {
 
   li:first-child {
     border-right: none;
+    
   }
   
   li a {
@@ -69,7 +85,9 @@ ul {
   }
   
   .active {
-    background-color: #94b8b6;
+    background-color: #73a1c3;
+    opacity: 80%;
+    color: white;
   }
  
 hr {
@@ -84,7 +102,7 @@ hr {
     position: relative;
     top: 15px;
     text-align: left;
-    color: #4aaaa5;
+    color: #4d7992;
     margin-left: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -92,7 +110,7 @@ hr {
 .block {
     background-color: white;
     width: 960px;
-    height: 1000px;
+    height: 750px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -119,6 +137,7 @@ hr {
 
   p { 
     text-align: justify;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color:gray;
@@ -127,16 +146,95 @@ hr {
     margin-bottom: 50px;
     
   }
-  .footer {
-    position:sticky;
-    bottom: 0;
-    height: 50px;
-    width: 1200px;
-    color: #4aaaa5;
-    text-align: center;
-    background-color: cornsilk;
-    font-size: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
   
- }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px; 
+  }
+  
+
+  .container {
+    position: relative;
+  }
+  .text-block {
+    
+    position: relative;
+    width: 300px;
+    bottom: 0;
+    background-color: black;
+    opacity: 50%;
+    
+  }
+
+  .image{
+      width: 300px;
+      height: 300px;
+
+  }
+
+/* CONTACT FORM*/
+
+.container-contact-form {
+  width: 900px;
+  margin: auto;
+  border-radius: 5px;
+  background-color:  #f2f2f2;
+  
+  padding: 40px;
+  
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4d7992;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7498ad;
+}
+
+
+  /* FOOTER */
+
+.footer {
+  background: rgb(250, 245, 225);
+  color:#4d7992;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.footer .footer-bottom {
+  position: absolute;
+  width: 100%;
+  border-top: 5px solid palevioletred;
+  padding: 10px;
+  font-size: 15px;
+  
+}
+  
