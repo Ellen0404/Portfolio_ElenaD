@@ -10,13 +10,9 @@ html, body {
     min-height: 100%;
   }
 
-body {
-   
-    background-image: url('../images/grey_wash.png');
-    height:100%;
-}
+  /* HEADER */
 
-header {
+  header {
     background-color: cornsilk;
     position: relative;
     width: 100%;
@@ -24,14 +20,21 @@ header {
 }   
 
 .headercontainer {
-         background-color: cornsilk;
-         width: 960px;
-         height: 80px;
-         
-         margin: 0 auto;
-
-
+  background-color: cornsilk;
+  width: 960px;
+  height: 80px;
+  margin: 0 auto;
 }
+
+/* BODY */
+
+body {
+   
+    background-image: url('../images/grey_wash.png');
+    height:100%;
+}
+
+
 #name {
   position: relative;
   float: left;
@@ -41,13 +44,14 @@ header {
   text-align: center;
   color: cornsilk;
   height: 80px;
-  width: 45px
+  width: 160px;
   margin: 0 auto;
   padding: 5px;
   top: 0;
  
- 
 }
+
+/* MENU */
 
 ul {
     position: relative;
@@ -122,8 +126,8 @@ hr {
 
 #image {
      float: left;
-     width: 300px;
-     height: 200px;
+     width: 250px;
+     height: 340px;
      margin-left: 30px;
      margin-right:20px;
 
@@ -147,6 +151,22 @@ hr {
     
   }
   
+  .button {
+    margin-left: 30px;
+    background-color: #4d7992;
+    border-radius: 8px;
+    border: none;
+    color: cornsilk;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* PORTFOLIO IMAGES BLOCK */
+
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -207,11 +227,14 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #4d7992;
-  color: white;
+  color: cornsilk;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 14px;
+  padding: 15px 28px;
+  border-radius: 8px;
 }
 
 input[type=submit]:hover {
